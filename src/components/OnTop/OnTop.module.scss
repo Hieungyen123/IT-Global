@@ -1,0 +1,16 @@
+.gototop {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(125, 155, 145);
+    text-align: center;
+    align-items: center;
+    color: white;
+    transition: all .35s ease;
+}

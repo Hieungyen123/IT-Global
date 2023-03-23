@@ -1,0 +1,164 @@
+.successfull {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .width {
+        width: 100%;
+        margin-bottom: 50px;
+        .title {
+            margin-bottom: 50px;
+            margin-top: 50px;
+            h2 {
+                font-size: 2.765em;
+                line-height: 1.2em;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 17px;
+                line-height: 1.8em;
+                letter-spacing: -0.3px;
+                color: rgba(25, 28, 47, 0.65);
+            }
+        }
+        .content {
+            .item {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                width: 80%;
+                padding: 10px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                .image {
+                    width: 250px;
+                    height: auto;
+                }
+
+                .successfull-content-p {
+                    margin-right: 20px;
+                    h5 {
+                        font-size: 1.118em;
+                        line-height: 1.3em;
+                        margin-bottom: 20px;
+                        
+                    }
+                    p {
+                        font-size: 17px;
+                        line-height: 1.8em;
+                        letter-spacing: -0.3px;
+                        color: rgba(25, 28, 47, 0.65);
+                    }
+                }
+                .more {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 120px;
+                    height: 35px;
+                    color: #fff;
+                    background-color: #007bff;
+                    border-color: #007bff;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    a {
+                        text-align: center;
+                    }
+                    .icon {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1099px) {
+    .successfull {
+        .width {
+            .content {
+                .item {
+                    width: 100%;
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .successfull {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .width {
+
+            .title {
+
+            }
+            .content {
+                display: grid;
+                align-self: center;
+                justify-self: center;
+                grid-template-columns: repeat(2, 1fr);
+                .item {
+                    align-self: center;
+                    justify-self: center;
+                    margin-bottom: 50px;
+                    display: block;
+                    .image {
+                        height: 200px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .successfull-content-p {
+                        min-height: 180px;
+                        height: 250px;
+                       h5 {
+                        padding: 10px;
+                        text-align: center;
+                       }
+
+                    }
+                    
+                }
+            }
+        }
+    
+    }
+}
+@media screen and (max-width: 740px) {
+    .successfull {
+
+        .width {
+            .content {
+                grid-template-columns: repeat(1, 1fr);
+                .item {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .img {
+                        
+                    }
+                    .image {
+                        height: 200px;
+                        margin-bottom: 10px;
+                    }
+                    .successfull-content-p {
+
+                        height: 180px;
+                       h5 {
+                       }
+
+                    }
+                    
+                }
+            }
+        }
+    
+    }
+}
