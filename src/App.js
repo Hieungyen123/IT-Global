@@ -19,31 +19,33 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <Routes>
-            {publicRoutes.map((route,index) => {
-              const Page = route.component;
-              const Layout =  DefaultLayout;
-              return (
-                  <Route 
-                    key={index} 
-                    path={route.path} 
-                    element={
-                      <ThemContext.Provider value={route.num}>
-                          <Layout >
-                              <Page />  
-                          </Layout>
-                      </ThemContext.Provider>
-                    } 
-                  />
-              )
-            })}
-          </Routes>
-      </BrowserRouter>
-      <div className='flexChatBot'>
-          <ChatBot/>
-          <OnTop/>
-      </div>
+        <div>
+          <BrowserRouter basename={process.env.PUBLIC_URL}>
+              <Routes>
+                {publicRoutes.map((route,index) => {
+                  const Page = route.component;
+                  const Layout =  DefaultLayout;
+                  return (
+                      <Route 
+                        key={index} 
+                        path={route.path} 
+                        element={
+                          <ThemContext.Provider value={route.num}>
+                              <Layout >
+                                  <Page />  
+                              </Layout>
+                          </ThemContext.Provider>
+                        } 
+                      />
+                  )
+                })}
+              </Routes>
+          </BrowserRouter> 
+        <div/>
+
+      <ChatBot/>
+      <OnTop/>
+      
     </div>
   );
 }
