@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             {publicRoutes.map((route,index) => {
               const Page = route.component;
