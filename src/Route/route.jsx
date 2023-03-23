@@ -4,7 +4,7 @@ import QandA from "../Page/QandA/QandA"
 import Introduce from "../Page/Introduce/Introduce"
 
 const publicRoutes = [
-    { path: "/home", component: Home , num: 1 },
+    { path: "/", component: Home , num: 1 },
     { path: "/introduce", component: Introduce,num: 2 },
     { path: "/successful", component: Successful, num: 3 },
     { path: "/QandA", component: QandA, num: 4 },
